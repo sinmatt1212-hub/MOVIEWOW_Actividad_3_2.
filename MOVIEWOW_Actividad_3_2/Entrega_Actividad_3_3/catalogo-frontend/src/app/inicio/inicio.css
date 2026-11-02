@@ -1,0 +1,64 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.85)
+    ),
+    url('/assets/fondo-cine.jpg') center / cover no-repeat fixed;
+
+  color: white;
+}
+
+/* Encabezado */
+.header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Logotipo */
+.logo-catalogo {
+  width: 260px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Contenido principal */
+.contenido-principal {
+  max-width: 750px;
+  background-color: rgba(0, 0, 0, 0.55);
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+}
+
+.contenido-principal h1 {
+  color: #ffc107;
+}
+
+.contenido-principal p {
+  line-height: 1.8;
+}
+
+/* Botón */
+.btn-warning {
+  font-weight: bold;
+  border-radius: 30px;
+}
+
+/* Pie de página */
+footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 14px;
+  color: #dddddd;
+}
+
+/* Adaptación a celulares */
+@media (max-width: 768px) {
+  .contenido-principal h1 {
+    font-size: 2rem;
+  }
+
+  .logo-catalogo {
+    width: 200px;
+  }
+}
